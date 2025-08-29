@@ -1,15 +1,17 @@
+
+
+# BMP 이미지 그레이스케일, MEM, edge 변환 소프트웨어
 <img width="250" height="250" alt="brainct_001" src="https://github.com/user-attachments/assets/c5e6a644-0b51-4f33-afaf-4bc3b5ba7eb1" />
 <img width="250" height="250" alt="output_grayscale" src="https://github.com/user-attachments/assets/0f495e1e-154d-4d64-a088-08615029255d"/>
 <img width="250" height="250" alt="output_edge" src="https://github.com/user-attachments/assets/9d55265c-ce17-41b3-91d1-e2dd5d6c3a26"/>
 
-
-# BMP 이미지 그레이스케일, MEM, edge 변환 소프트웨어
+---
 ## 문서 관리 정보
 - 문서 ID: BMP-DO178C-001
 - 버전: 1.0
 - 날짜: 2025년 8월 28일
 - 시스템: 항공 디스플레이 처리 장치
-
+---
 ## 1. 소프트웨어 인증 계획서 (PSAC)
 ### 1.1 소프트웨어 개요
 - 소프트웨어 항목: BMP 이미지 그레이스케일 및 엣지 검출 변환기 MEM 출력 모듈
@@ -34,7 +36,7 @@
 
 ### 1.3 소프트웨어 생명주기 데이터
 - 제출 문서: PSAC, SRS, SDS, SCS, SVP, SCMP 및 각종 테스트 결과 보고서(3개 출력 포함)
-
+---
 ## 2. 소프트웨어 요구사항 표준 (SRS)
 ### 2.1 상위레벨 요구사항
 - HLR-001:
@@ -69,7 +71,7 @@
 
 - LLR-007:
   - 엣지 BMP 파일 헤더 및 데이터 형식 준수
-
+---
 ## 3. 소프트웨어 설계 표준 (SDS)
 ### 3.1 아키텍처 설계
 ~~~
@@ -110,7 +112,7 @@ BMP__Processor
   - "output_grayscale.bmp" (8비트 그레이스케일 BMP)
   - "output_edge.bmp" (8비트 엣지 검출 BMP)
   - "output_image.mem" (MEM ASCII 텍스트)
-
+---
 ## 4. 소프트웨어 코드 표준 (SCS)
 ### 4.1 코딩 규칙
 - PascalCase: 구조체
@@ -122,7 +124,7 @@ BMP__Processor
 - 명확한 이름 및 주석
 - 예외 처리 완료, 메모리 누수 없음
 - 모듈화, 유지보수 용이성 보장
-
+---
 ## 5. 소프트웨어 검증 계획 (SVP)
 ### 5.1 검증 목표
 - BMP 처리
@@ -148,7 +150,7 @@ BMP__Processor
 - 명령문
 - 분기 100%
 - MC/DC 미적용 (DAL-D 수준)
-
+---
 ## 6. 소프트웨어 형상관리 계획 (SCMP)
 ### 6.1 형상관리 목표
 - 소스, 문서, 테스트 사례 변경 전방위 관리
@@ -159,7 +161,7 @@ BMP__Processor
 
 ### 6.3 변경 관리
 - 변경 요청 → 영향 분석 → 승인 → 구현 → 테스트 → 문서화
-
+---
 ## 7. 추적성 매트릭스
  | 요구사항 ID |  설계 요소 | 코드 구현 | 테스트 케이스 |
  |-----|-----|-----|-----|
@@ -168,9 +170,9 @@ BMP__Processor
 | HLR-003 |	Output_Generator |	BMP 그레이스케일 이미지 생성 |	TC-001|
 | HLR-004	| Memory_Manager	| malloc(), free() 관리 |	TC-004 |
 | HLR-005	| Error_Handler	| 파일 I/O 및 메모리 오류 처리 |	TC-002~TC-005 |
-|HLR-006	| MEM_File_Generator	| MEM 파일 생성 함수	| TC-006 |
-|HLR-007	| Edge_Detector	| findEdges(), 엣지 BMP 출력	| TC-007 |
-
+| HLR-006	| MEM_File_Generator	| MEM 파일 생성 함수	| TC-006 |
+| HLR-007	| Edge_Detector	| findEdges(), 엣지 BMP 출력	| TC-007 |
+---
 ## 8. 인증 결론
 - 본 소프트웨어는 DO-178C DAL-D 수준에서 요구하는 BMP 그레이스케일 변환, MEM 파일 출력, 소벨 필터 엣지 검출 기능을 완전하게 구현하였으며,
 계획된 검증 절차를 통해 모든 기능의 정확성, 신뢰성, 오류 처리 능력을 입증하였다.
