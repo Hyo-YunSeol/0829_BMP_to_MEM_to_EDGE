@@ -1,5 +1,6 @@
 <img width="300" height="300" alt="brainct_001" src="https://github.com/user-attachments/assets/c5e6a644-0b51-4f33-afaf-4bc3b5ba7eb1" />
-
+<img width="300" height="300" alt="output1_edge" src="https://github.com/user-attachments/assets/c5e6a644-0b51-4f33-afaf-4bc3b5ba7eb1" />
+<img width="300" height="300" alt="output_edge" src="https://github.com/user-attachments/assets/c5e6a644-0b51-4f33-afaf-4bc3b5ba7eb1" />
 # BMP 이미지 그레이스케일, MEM, edge 변환 소프트웨어
 ## 문서 관리 정보
 - 문서 ID: BMP-DO178C-001
